@@ -2,7 +2,7 @@
 
 基于**pygame**的坦克大战
 
-依托于https://github.com/ml365/some-code/blob/master/tanke.py提供的框架
+依托于https://github.com/ml365/some-code/blob/master/tanke.py 提供的框架
 
 仅做了细节的优化，不甚感激！
 
