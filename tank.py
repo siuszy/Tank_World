@@ -551,11 +551,12 @@ class TankGame:
                 ls.remove(b)
 
     def get_event(self):
-        global SCREEN_WIDTH, SCREEN_HEIGHT
+        global SCREEN_WIDTH, SCREEN_HEIGHT, MY_BIRTH_LEFT, MY_BIRTH_TOP
         event_list = pygame.event.get()
         for event in event_list:
             if event.type == pygame.VIDEORESIZE:
                 SCREEN_WIDTH, SCREEN_HEIGHT = event.size
+                MY_BIRTH_LEFT, MY_BIRTH_TOP = SCREEN_WIDTH / 2 - 90, SCREEN_HEIGHT - 120
                 self.window = self.display.set_mode([SCREEN_WIDTH, SCREEN_HEIGHT], pygame.RESIZABLE, 32)
 
             if event.type == pygame.QUIT:
